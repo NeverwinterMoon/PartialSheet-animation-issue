@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		E20139A02488C6F7009339FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E201399F2488C6F7009339FE /* Assets.xcassets */; };
 		E20139A32488C6F7009339FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20139A22488C6F7009339FE /* Preview Assets.xcassets */; };
 		E20139A62488C6F7009339FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20139A42488C6F7009339FE /* LaunchScreen.storyboard */; };
+		E20139AF2488C73A009339FE /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = E20139AE2488C73A009339FE /* PartialSheet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20139AF2488C73A009339FE /* PartialSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = "PartialSheet-animation-issue";
+			packageProductDependencies = (
+				E20139AE2488C73A009339FE /* PartialSheet */,
+			);
 			productName = "PartialSheet-animation-issue";
 			productReference = E20139962488C6F4009339FE /* PartialSheet-animation-issue.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = E201398D2488C6F4009339FE;
+			packageReferences = (
+				E20139AD2488C73A009339FE /* XCRemoteSwiftPackageReference "PartialSheet" */,
+			);
 			productRefGroup = E20139972488C6F4009339FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E20139AD2488C73A009339FE /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E20139AE2488C73A009339FE /* PartialSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E20139AD2488C73A009339FE /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			productName = PartialSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E201398E2488C6F4009339FE /* Project object */;
 }
